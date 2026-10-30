@@ -1,0 +1,38 @@
+{
+  "name": "pifire-remote",
+  "author": "PiFire Remote",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "PiFire",
+    "uuid": "5f56a0d6-4224-48f0-bfc0-b4f85106fd2b",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["aplite", "basalt", "chalk", "diorite", "emery", "flint", "gabbro"],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": ["configurable"],
+    "messageKeys": [
+      "READY",
+      "CMD",
+      "ARG",
+      "MODE",
+      "GRILL_TEMP",
+      "SETPOINT",
+      "UNITS",
+      "PROBES",
+      "SPLUS",
+      "STATUS",
+      "ERROR",
+      "PIFIRE_URL"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
